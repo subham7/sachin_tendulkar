@@ -1,0 +1,52 @@
+<div class="stats-section">
+  <div class="container">
+    <h1>STATS</h1>
+      <div class="row stats">
+        <ng-container *ngFor="let i of data.stats">
+          <div class="col-sm-2 col-3">
+            <h4>{{i.total_score}}</h4>
+            <h6>Runs</h6>
+          </div>
+          <div class="col-sm-2 col-3">
+            <h4>{{i.total_match}}</h4>
+            <h6>Matches</h6>
+          </div>
+          <div class="col-sm-2 col-3">
+            <h4>{{i.max_score}}</h4>
+            <h6>Highest Score</h6>
+          </div>
+        </ng-container>
+        <div class="col-sm-2 col-3">
+          <h4>{{data.battingAvg[0].avg}}</h4>
+          <h6>Average</h6>
+        </div>
+        <div class="col-sm-2 col-3">
+          <h4>{{data.inningsCount[0].innings}}</h4>
+          <h6>Innings</h6>
+        </div>
+        <div class="col-sm-2 col-3 bodNone">
+          <h4>{{data.numCentury[0].century}}</h4>
+          <h6>Centuries</h6>
+        </div>
+        <div class="col-sm-2 col-3 ">
+          <h4>{{data.winCount[0].wincount}}</h4>
+          <h6>Wins</h6>
+        </div>
+        <ng-container *ngFor="let i of data.wicketCatchesCount">
+          <div class="col-sm-2 col-3">
+            <h4>{{i.wicketcount}}</h4>
+            <h6>Wickets</h6>
+          </div>
+          <div class="col-sm-2 col-3 bodNone">
+            <h4>{{i.catches}}</h4>
+            <h6>Catches</h6>
+          </div>
+          </ng-container>
+      </div>
+      <div>
+        <br><br>
+        <h3>Runs Per Match</h3>
+      <div #chart class="graph"></div>
+      </div>
+  </div>
+</div>

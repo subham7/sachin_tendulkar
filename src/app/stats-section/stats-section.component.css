@@ -1,0 +1,30 @@
+.stats-section {
+  padding-bottom: 50px;
+}
+.stats-section h1 {
+  color: #4b32f0;
+}
+.stats-section ul li {
+    list-style: none;
+    display: inline-block;
+}
+.stats {
+    text-align: left;
+    padding-top: 20px; 
+}
+.stats div {
+    border-right: 1px solid #ddd; 
+    padding-top: 20px;
+
+}
+.bodNone {
+    border: none !important;
+}
+
+@media screen and (max-width: 500px) {
+    .svg-container {
+
+        height: 200px !important;
+        width: 500px !important;
+    }
+}

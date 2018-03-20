@@ -1,0 +1,86 @@
+.nopadding {
+    padding: 0;
+    margin: 0;
+}
+.body-wrapper {
+    font-family: 'Dosis', sans-serif;
+    overflow-x: hidden;
+}
+.top-section {
+    width: 100%;
+    color: #fff;
+    position: relative;
+    height: 120vh;
+    overflow: hidden;
+}
+.top-section img {
+    position: absolute;
+    left: 27%;
+    top: 40px;
+    z-index: 9;
+    width: 630px;
+}
+.top-section-quote {
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    text-align: right;
+    z-index: 10;
+    width: 450px;
+}
+.top-section-name {
+    position: absolute;
+    top: 480px;
+    right: 50px;
+    z-index: 10;
+    text-align: right;
+    line-height: 4em;
+}
+.top-section-name span {
+    background-color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.top-section-bg {
+    background-color: #4b32f0;
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    z-index: 8;
+}
+.description-section {
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+.description-section h1 {
+    color: #4b32f0;
+}
+footer {
+    background-color: #4b32f0;
+    height: 8em;
+    width: 100%;
+}
+footer h6 {
+    color: #fff;
+    position: relative;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+@media screen and (max-width: 500px) {
+    .top-section-quote {
+        left: 0;
+    }
+     .top-section-quote h4 {
+        font-size: 1em;
+        max-width: 100px;
+     }
+     .top-section img {
+         left: -40px;
+     }
+     .top-section-name {
+       top: 580px;
+       right: 0;
+    }
+}

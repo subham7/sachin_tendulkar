@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{title}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+  <script src="customJs/main.js"></script>
+</head>
+<body>
+  <div class="body-wrapper">
+    <div class="top-section">
+      <div class="top-section-name">
+        <span style="font-size: 5rem !important;">{{firstName | uppercase}}</span><br>
+        <span style="font-size: 5rem !important;">{{lastName | uppercase}}</span>
+      </div>
+      <div class="top-section-quote">
+        <h4>"I hate losing and cricket being my first love, once I enter the ground it's a different zone altogether and that hunger for
+        winning is always there."</h4>
+      </div>
+      <img src="assets/images/sachin.jpg" alt="Sachin Tendulkar">
+      <div class="top-section-bg"></div>
+    </div>
+    <div class="description-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <h1>ABOUT</h1>
+            <h4>  Sachin Ramesh Tendulkar is a former Indian cricketer
+            and a former captain, regarded as one of the greatest batsmen of all time.
+            The highest run scorer of all time in International cricket, Tendulkar took up cricket at the age of eleven, made his Test
+            debut on 15 November 1989 against Pakistan in Karachi at the age of sixteen, and went on to represent Mumbai domestically
+            and India internationally for close to twenty-four years.
+            He is the only player to have scored one hundred international centuries, the first batsman to score a double century in
+            a One Day International, the holder of the record for the most number of runs in both ODI and Test cricket, and the only
+            player to complete more than 30,000 runs in international cricket.</h4>
+            <!-- <ng-container *ngFor = "let i of data.data1">
+              <h4>{{ i.alumid }}</h4>
+            </ng-container> -->
+            
+          </div>
+          <div class="col-md-5">
+            <img src="assets/images/sachin3.jpg" class="img-fluid" alt="Sachin Tendulkar">
+          </div>
+        </div>
+      </div>
+    </div>
+    <app-stats-section></app-stats-section>
+    <app-compare-stats></app-compare-stats>
+  </div>
+  
+  <footer>
+    <h6>Developed by Subham Sengupta</h6>
+  </footer>
+
+    <script src="../../node_modules/chart.js/src/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    
+</body>
+</html>
