@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.2.
 
 ## Note
-Run `ng build` to build the project then use `node server.js` command to start the server. Then `http://localhost:8080/` to visit the website. Before that use data.sql file and setup a mysql server then change the configuration inside config.js file inside server folder.
+Run `ng build` to build the project then use `node server.js` command to start the server. Then go to `http://localhost:8080/` to visit the website. Before that use data.sql file and setup a mysql server then change the configuration inside config.js file inside server folder.
 
 ## Development server
 
