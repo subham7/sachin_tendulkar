@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { ChartsModule } from 'ng2-charts';
 import Chart from 'chart.js';
+import Speech from 'speak-tts';
 
 import { AppComponent } from './app.component';
 import { GetDataService } from './get-data.service';
