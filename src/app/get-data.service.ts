@@ -8,19 +8,19 @@ export class GetDataService {
   constructor(private http: Http) { }
 
   fetchStatsData() {
-    return this.http.get('http://localhost:8080/getstatsdata').map(
+    return this.http.get('http://13.127.134.53:8080/getstatsdata').map(
       (response) => response.json()
     );
   }
 
   fetchAllData() {
-    return this.http.get('http://localhost:8080/getalldata').map(
+    return this.http.get('http://13.127.134.53:8080/getalldata').map(
       (response) => response.json()
     );
   }
 
   fetchCompareData() {
-    return this.http.get('http://localhost:8080/getcomparedata').map(
+    return this.http.get('http://13.127.134.53:8080/getcomparedata').map(
       (response) => response.json()
     );
   }
