@@ -1,9 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
-import { ChartsModule } from 'ng2-charts';
 import Chart from 'chart.js';
-import Speech from 'speak-tts';
 
 import { AppComponent } from './app.component';
 import { GetDataService } from './get-data.service';
@@ -19,8 +17,7 @@ import { CompareStatsComponent } from './compare-stats/compare-stats.component';
   ],
   imports: [
     BrowserModule,
-    HttpModule,
-    ChartsModule
+    HttpModule
   ],
   providers: [
     GetDataService
